@@ -5,7 +5,7 @@ import "./navbar.css";
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <span>Sapies Quant</span>
+      <span>Sapies Quant - To Do List</span>
     </nav>
   );
 }
