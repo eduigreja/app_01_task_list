@@ -2,6 +2,7 @@ import "./styles.css";
 import React, { useState } from "react";
 
 import Navbar from "./components/Navbar/Navbar";
+import Header from "./components/Header/Header";
 import TaskList from "./components/TaskList/TaskList";
 
 let idAcc = 0;
@@ -46,8 +47,8 @@ export default function App() {
 
   return (
     <div className="App">
-      {/* <h1>Hola hermanitos!</h1>   */}
       <Navbar />
+      <Header />
 
       <div className="container">
         <TaskList
