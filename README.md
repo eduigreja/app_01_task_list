@@ -1,2 +1,3 @@
-# app_01_task_list
-Created with CodeSandbox
+# cruso1
+
+Link para o projeto [aqui](https://ttz40.csb.app/)
