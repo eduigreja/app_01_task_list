@@ -4,12 +4,6 @@ import React, { useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import TaskList from "./components/TaskList/TaskList";
 
-//const task = {
-//  id: 0,
-// title: "Nova Tarefa",
-//  state: "Pendente"
-//}
-
 let idAcc = 0;
 const generateID = () => {
   idAcc = idAcc + 1;
@@ -57,39 +51,31 @@ export default function App() {
 
       <div className="container">
         <TaskList
-          title="Pendente"
+          title="Future Tasks"
           onAddTask={addTask}
-          taskState="Pendente"
-          tasks={tasks.filter((t) => t.state === "Pendente")}
+          taskState="Future Tasks"
+          tasks={tasks.filter((t) => t.state === "Future Tasks")}
           onTaskUpdate={updateTask}
           onDeleteTask={deleteTask}
         />
-        {/*<TaskList title="Fazendo"/>
-        <TaskList title="Completa"/> */}
 
         <TaskList
-          title="Fazendo"
+          title="Doing"
           onAddTask={addTask}
-          taskState="Fazendo"
-          tasks={tasks.filter((t) => t.state === "Fazendo")}
+          taskState="Doing"
+          tasks={tasks.filter((t) => t.state === "Doing")}
           onTaskUpdate={updateTask}
           onDeleteTask={deleteTask}
         />
         <TaskList
-          title="Completa"
+          title="Complete"
           onAddTask={addTask}
-          taskState="Completa"
-          tasks={tasks.filter((t) => t.state === "Completa")}
+          taskState="Complete"
+          tasks={tasks.filter((t) => t.state === "Complete")}
           onTaskUpdate={updateTask}
           onDeleteTask={deleteTask}
         />
       </div>
-
-      {/*<ul>
-        <li>Aprenderemos React </li>
-        <li>Aprenderemos Componentes </li>
-      </ul>
-      */}
     </div>
   );
 }

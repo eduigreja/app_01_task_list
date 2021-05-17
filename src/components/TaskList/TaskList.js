@@ -16,7 +16,7 @@ export default function TaskList({
 }) {
   const addTask = () => {
     //console.log("Funcao sendo chamada em Task List");
-    onAddTask("Nova Tarefa", taskState);
+    onAddTask("New Task", taskState);
   };
 
   return (
@@ -36,10 +36,10 @@ export default function TaskList({
             />
           );
         })}
-        {tasks.length === 0 && <div className="empty-list">Lista vazia</div>}
+        {tasks.length === 0 && <div className="empty-list">Empty List</div>}
         <button onClick={addTask} className="btn">
           <img src={plusIcon} alt="plus" />
-          Adicionar Tarefa
+          Add Task
         </button>
       </div>
     </div>
