@@ -65,10 +65,14 @@ img {
 
 .App .container {
   width: 100%;
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   padding: 9px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 8px;
+}
+
+.App .imgs {
+  text-align: center;
 }

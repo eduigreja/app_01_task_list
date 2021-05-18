@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar/Navbar";
 import Header from "./components/Header/Header";
 import TaskList from "./components/TaskList/TaskList";
 
+import background_sapiens from "./img/sapiens_evol.png";
+
 let idAcc = 0;
 const generateID = () => {
   idAcc = idAcc + 1;
@@ -45,6 +47,17 @@ export default function App() {
     });
   };
 
+  {
+    /*}
+  const [count,setCount] = useState(0);
+  const addFun = () => {
+    setCount ((count) => {
+      return count + 1;
+    })
+  }
+*/
+  }
+
   return (
     <div className="App">
       <Navbar />
@@ -77,6 +90,19 @@ export default function App() {
           onDeleteTask={deleteTask}
         />
       </div>
+
+      <div className="imgs">
+        <img src={background_sapiens} alt="bcg" />
+      </div>
+
+      <div>Counter</div>
+
+      {/*
+      <div>
+        count: {count}
+        <button onClick={addFun}>+</button>
+      </div>
+      */}
     </div>
   );
 }
