@@ -7,6 +7,8 @@ import TaskList from "./components/TaskList/TaskList";
 
 import background_sapiens from "./img/sapiens_evol.png";
 
+import Counter from "./components/Counter/Counter";
+
 let idAcc = 0;
 const generateID = () => {
   idAcc = idAcc + 1;
@@ -47,16 +49,12 @@ export default function App() {
     });
   };
 
-  {
-    /*}
-  const [count,setCount] = useState(0);
+  const [count, setCount] = useState(0);
   const addFun = () => {
-    setCount ((count) => {
+    setCount((count) => {
       return count + 1;
-    })
-  }
-*/
-  }
+    });
+  };
 
   return (
     <div className="App">
@@ -95,14 +93,14 @@ export default function App() {
         <img src={background_sapiens} alt="bcg" />
       </div>
 
-      <div>Counter</div>
+      <div>
+        <Counter />
+      </div>
 
-      {/*
       <div>
         count: {count}
         <button onClick={addFun}>+</button>
       </div>
-      */}
     </div>
   );
 }
